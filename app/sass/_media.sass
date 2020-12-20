@@ -3,53 +3,293 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1560px)
+  header .btn:last-child
+    margin: 0 -100px 0 0
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1300px)
+  header .btn:last-child
+    margin: 0 -50px 0 0
+
+  h1
+    font-size: 60px
+
 @media only screen and (max-width : 1200px)
-	/**/
+  header
+    .btn
+      width: auto
+      min-width: auto
+      &:last-child
+        margin: 0
 
+  .logo
+    max-width: 250px
 
-/* Medium Devices, Desktops */
+  .clients-box
+    width: 180px
+    height: 180px
+    padding: 15px
+
+  .order-services .box-text
+    font-size: 22px
+
+  .order-services h2:before
+    width: 380px
+    height: 240px
+
+  footer .btn
+    width: auto
+
 @media only screen and (max-width : 992px)
-	/**/
+  h1
+    font-size: 40px
 
+  .title-text
+    font-size: 24px
+
+  .main-box
+    margin: 50px 0 0
+    font-size: 18px
+
+  main
+    padding: 70px 0
+
+  h2
+    font-size: 42px
+
+  .services h2
+    max-width: 630px
+
+  .clients-box
+    width: 150px
+    height: 150px
+
+  .clients
+    padding: 50px 0 30px
+    h2
+      padding: 0 124px 0 0
+      &:after
+        width: 100px
+
+  .text-border
+    font-size: 30px
+
+  .order-services .btn
+    margin: 20px auto 50px
+    
+  .order-services h2:before
+    display: none
+
+  .order-services-content
+    padding: 0
+
+  .order-services .box-text
+    font-size: 18px
+    padding: 0
+    p
+      margin: 0 0 10px
+
+  footer
+    padding: 50px 0
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 880px)
+  header
+    .logo
+      max-width: none
+      margin: 0 auto 10px
+      img
+        max-width: 250px
+        width: 100%
+
+  .header-wrapper
+    justify-content: center
+
+  .footer-menu
+    width: 100%
+    order: 1
+    column-count: 1
+    display: flex
+    flex-wrap: wrap
+    margin: 10px 0 0
+    li
+      width: 33.3%
+
+  .footer-box
+    margin: 0 auto 0 0
+
+  .copyright
+    font-size: 22px
+
 @media only screen and (max-width : 768px)
-	/**/
+  .btn
+    height: 35px
+    font-size: 10px
 
+  h1
+    text-align: center
+    font-size: 30px
+
+  .title-text
+    max-width: none
+    text-align: center
+    margin: 20px auto 0
+    justify-content: center
+    font-size: 20px
+
+  .services h2
+    max-width: 530px
+    padding: 0 100px 0 0
+    &:after
+      width: 100px
+
+  h2
+    font-size: 30px
+
+  .services
+    padding: 60px 0 35px
+
+  .blog-box
+    width: 300px
+
+  .blog-slider
+    padding: 0 0 0 20px
+
+  .blog
+    padding: 50px 0
+    .line-wrapper
+      padding: 0 0 0 40px
+
+  .slick-prev
+    margin: 0 15px 0 0
+
+  .clients-box
+    width: 100px
+    height: 100px
+    padding: 20px
+
+  .contacts h2
+    font-size: 24px
+    padding: 15px
+
+  .phone
+    font-size: 24px
+
+  .address
+    font-size: 22px
+
+  .contacts
+    padding: 50px 0
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px)
+  header
+    .logo
+      max-width: 170px
+      margin: 0 auto 0 0
+    .btn
+      display: none
+      &:last-child
+        display: flex
+
+  .main-box
+    font-size: 14px
+
+  h2
+    font-size: 24px
+    margin: 0 0 30px
+    br
+      display: none
+
+  .services
+    h2
+      padding: 0 70px 0 0
+      &:after
+        width: 70px
+        height: 44px
+
+  .clients-col
+    width: 25%
+
+  .text-border
+    font-size: 24px
+
+  .clients
+    h2
+      padding: 0 60px 0 0
+      &:after
+        width: 60px
+        height: 30px
+      br
+        display: none
+
+  footer
+    padding: 30px 0
+
+  .footer-box
+    max-width: 170px
+
+  .copyright
+    margin: 10px 0 0
+    font-size: 18px
+
+  .footer-menu
+    li
+      width: 50%
+
+
+
 @media only screen and (max-width : 480px)
-	/**/
+  .clients-col
+    width: 33.3%
 
+  .order-services .box-text
+    font-size: 16px
+
+  .address
+    font-size: 18px
+
+  .phone-box
+    padding: 15px
+
+  .phone
+    font-size: 22px
+
+  .contacts h2
+    font-size: 22px
+    margin: 0 auto 200px
+
+  .footer-box
+    max-width: none
+    margin: 0 auto 20px
+    align-items: center
+
+  footer
+    .btn
+      margin: 0 auto
+      &:last-child
+        margin: 0 auto
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 420px)
+  header
+    .logo
+      max-width: 150px
 
+  .btn
+    padding: 0 10px
 
-/*==========  Mobile First  ==========*/
+  .blog-box
+    width: 260px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .blog-box__img
+    height: 180px
 
+  .clients-col
+    width: 50%
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .text-border
+    font-size: 22px
 
