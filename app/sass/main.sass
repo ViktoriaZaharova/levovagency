@@ -572,7 +572,7 @@ main
   color: $text2
   -webkit-text-fill-color: #f7f7f7
   -webkit-text-stroke-width: 1px
-  -webkit-text-stroke-color: #000
+  -webkit-text-stroke-color: $text
 
 .clients-col
   width: 20%
@@ -1309,6 +1309,8 @@ footer
     font-size: 52px
     text-transform: none
     margin: 0 0 30px
+  .breadcrumb-nav
+    margin: 0 0 55px
 
 .blog-img
   border-radius: 20px
@@ -1378,6 +1380,78 @@ footer
       margin: 0 0 -25px 19px
   .blog-box
     width: 352px
+
+//main-about
+.main-about
+  padding: 34px 0 88px
+  .breadcrumb-nav
+    margin: 0 0 24px
+  h1
+    font-size: 52px
+    margin: 0 0 45px
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      display: inline-block
+      background: url("../img/arrow1.png") no-repeat center
+        size: contain
+      width: 101px
+      height: 48px
+      margin: 0 0 -35px 19px
+
+.description-company
+  margin: 0 0 60px
+  font-size: 18px
+  font-weight: 500
+
+.why-company
+  .text-border
+    font-size: 35.5px
+
+.why-company__list
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 12px
+  font-weight: 500
+  li
+    width: 33.3%
+    margin: 27px 0 0
+    display: flex
+    align-items: center
+    p
+      max-width: 180px
+      width: 100%
+    &:nth-child(2)
+      p
+        max-width: 145px
+    &:last-child
+      p
+        max-width: 130px
+
+.why-company__num
+  -webkit-text-stroke: 3px #d90219
+  margin: 0 10px 0 0
+  font-size: 118.5px
+  font-weight: 800
+  line-height: .8
+  color: #f7f7f7
+
+.leader-company
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  text-align: center
+  font-size: 18px
+  font-weight: 500
+  h3
+    font-weight: bold
+    margin: 15px auto 0
+
+
 
 @import "media"
 // Всегда в конце
