@@ -7,11 +7,19 @@
   header .btn:last-child
     margin: 0 -100px 0 0
 
-
+  .header
+    .btn
+      &:last-child
+        margin: 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1300px)
   header .btn:last-child
     margin: 0 -50px 0 0
+
+  .header
+    .btn
+      &:last-child
+        margin: 0
 
   h1
     font-size: 60px
@@ -21,6 +29,11 @@
     .btn
       width: auto
       min-width: auto
+      &:last-child
+        margin: 0
+
+  .header
+    .btn
       &:last-child
         margin: 0
 
@@ -152,6 +165,10 @@
 
   .work-instruction__box
     max-width: 25%
+
+  .main-service h1
+    br
+      display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)

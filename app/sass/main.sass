@@ -244,6 +244,11 @@ header
     &:last-child
       margin: 0 -225px 0 0
 
+.header
+  .btn
+    &:last-child
+      margin: 0
+
 .header-wrapper
   display: flex
   align-items: center
@@ -554,6 +559,8 @@ main
 
   h3
     margin: 0 0 11px
+  .text-border
+    -webkit-text-stroke-color: $text2
 
 .text-border
   text-transform: uppercase
@@ -562,7 +569,7 @@ main
   color: $text2
   -webkit-text-fill-color: #f7f7f7
   -webkit-text-stroke-width: 1px
-  -webkit-text-stroke-color: $text2
+  -webkit-text-stroke-color: #000
 
 .clients-col
   width: 20%
@@ -754,6 +761,9 @@ footer
       color: #000
       line-height: 1.69
 
+      &:hover
+        color: $accent
+
 //form
 .form
   .btn
@@ -808,6 +818,7 @@ footer
   text-decoration: underline
   display: inline-block
   color: #7e7e7e
+
   &:hover
     color: $accent
 
@@ -862,13 +873,17 @@ footer
 //page service
 .main-service
   padding: 34px 0 117px
+
   .box-text
     line-height: 1.11
     font-size: 18px
+
     p
       margin: 0 0 20px
+
       &:last-child
         margin: 0
+
   h1
     margin: 0 0 26px
 
@@ -879,13 +894,14 @@ footer
   margin: 0
   font-size: 14px
   font-weight: 500
+
   a
     color: #fff
 
 .breadcrumb-item.active
   color: #ffffff
 
-.breadcrumb-item+.breadcrumb-item::before
+.breadcrumb-item + .breadcrumb-item::before
   color: #fff
 
 .main-service__icon
@@ -902,12 +918,14 @@ footer
 //.stages-work
 .stages-work
   padding: 88px 0 87px
+
   .text-border
     margin: 0
     max-width: 540px
     width: 100%
     font-size: 35.5px
     line-height: 1
+
   h2
     margin: 0 0 13px
 
@@ -919,15 +937,18 @@ footer
   justify-content: space-between
   flex-wrap: wrap
   padding: 0 125px
+
   &:before, &:after
     content: ''
     position: absolute
     height: 2px
     background: $accent
+
   &:before
     width: 479px
     left: -380px
     top: 93px
+
   &:after
     top: 176px
     width: 520px
@@ -944,6 +965,7 @@ footer
   max-width: 174px
   width: 100%
   position: relative
+
   &:after
     content: ''
     position: absolute
@@ -953,11 +975,14 @@ footer
       size: 100%
     width: 140px
     height: 93px
+
   &:nth-child(even)
     margin: 66px 0 0
+
   &:last-child
     &:after
       display: none
+
   &:nth-child(2)
     &:after
       width: 124px
@@ -966,6 +991,7 @@ footer
       top: 14px
       background: url("../img/stage-arrow2.png") no-repeat center
         size: 100%
+
   &:nth-child(3)
     &:after
       background: url("../img/stage-arrow3.png") no-repeat center
@@ -990,6 +1016,7 @@ footer
   display: flex
   align-items: center
   justify-content: center
+
   img
     width: 100%
     height: 100%
@@ -1004,9 +1031,11 @@ footer
   flex-direction: column
   align-items: flex-start
   justify-content: center
+
   .box-text
     max-width: 320px
     width: 100%
+
   h3
     margin: 0 0 13px
     font-size: 26px
@@ -1022,6 +1051,7 @@ footer
   align-items: flex-start
   justify-content: center
   flex-wrap: wrap
+
   &:after
     content: ''
     position: absolute
@@ -1030,7 +1060,7 @@ footer
     height: 1px
     top: 100px
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
 
 .work-instruction__box
   margin: 0 0 32px
@@ -1045,7 +1075,6 @@ footer
   z-index: 1
 
 
-
 .work-instruction__box-icon
   display: flex
   align-items: center
@@ -1056,17 +1085,20 @@ footer
   height: 202px
   position: relative
   margin: 0 auto 11px
+
   &:after, &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     border-radius: 50%
+
   &:after
     border: solid 2px #d90219
     width: 132px
     height: 132px
+
   &:before
     width: 152px
     height: 152px
@@ -1082,7 +1114,7 @@ footer
   position: absolute
   left: 50%
   top: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   border-radius: 50%
   border: solid 2px #d90219
   display: inline-block
@@ -1111,8 +1143,10 @@ footer
   padding: 0 0 0 30px
   font-size: 18px
   counter-reset: item
+
   li
     margin: 0 0 20px
+
     &:before
       content: counters(item, ".") ". "
       counter-increment: item
@@ -1120,6 +1154,7 @@ footer
       font-weight: 800
       display: inline-block
       margin: 0 5px 0 0
+
     &:last-child
       margin: 0
 
@@ -1128,16 +1163,18 @@ footer
   align-items: center
   justify-content: center
   position: relative
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     background: #fff
     border-radius: 50%
     width: 355px
     height: 355px
+
   img
     position: relative
     z-index: 1
@@ -1145,8 +1182,10 @@ footer
 //.callback
 .callback
   padding: 86px 0 0
+
   h2
     margin: 0 0 14px
+
   .text-border
     font-size: 35.5px
     color: #fff
@@ -1159,6 +1198,7 @@ footer
   border-radius: 23.5px
   box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
   padding: 52px 30px 60px 32px
+
   button[type="submit"]
     max-width: 308px
     width: 100%
@@ -1170,6 +1210,7 @@ footer
   justify-content: space-between
   align-items: center
   margin: 16px 0 0
+
   .checkbox
     width: auto
     margin: 0
@@ -1180,8 +1221,10 @@ footer
   justify-content: space-between
   align-items: center
   margin: 0
+
   label
     width: 49%
+
   .label-message
     width: 100%
 
@@ -1205,6 +1248,7 @@ footer
   justify-content: space-between
   padding: 0 37px 0 24px
   text-transform: none
+
   &:after
     width: 45px
     height: 45px
@@ -1212,6 +1256,7 @@ footer
       size: 27px
     border-radius: 50%
     border: none
+
   &:focus, &:hover
     box-shadow: none
     background: #fff
@@ -1221,7 +1266,7 @@ footer
 .dropdown-menu
   width: 100%
 
-.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus
   box-shadow: none
   background: #ffffff
   border-color: $accent
@@ -1239,6 +1284,7 @@ footer
   color: #7e7e7e
   font-size: 13.5px
   padding: 0 19px
+
   input
     display: none
 

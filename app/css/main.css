@@ -260,6 +260,9 @@ header {
     header .btn:last-child {
       margin: 0 -225px 0 0; }
 
+.header .btn:last-child {
+  margin: 0; }
+
 .header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +608,8 @@ main {
         background-size: 100%; }
   .clients h3 {
     margin: 0 0 11px; }
+  .clients .text-border {
+    -webkit-text-stroke-color: #b3b3b3; }
 
 .text-border {
   text-transform: uppercase;
@@ -613,7 +618,7 @@ main {
   color: #b3b3b3;
   -webkit-text-fill-color: #f7f7f7;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #b3b3b3; }
+  -webkit-text-stroke-color: #000; }
 
 .clients-col {
   width: 20%;
@@ -814,6 +819,8 @@ footer {
     font-weight: 500;
     color: #000;
     line-height: 1.69; }
+    .footer-menu li a:hover {
+      color: #d90219; }
 
 .form .btn {
   margin: 20px auto 0; }
@@ -1382,12 +1389,16 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1560px) {
   header .btn:last-child {
-    margin: 0 -100px 0 0; } }
+    margin: 0 -100px 0 0; }
+  .header .btn:last-child {
+    margin: 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1300px) {
   header .btn:last-child {
     margin: 0 -50px 0 0; }
+  .header .btn:last-child {
+    margin: 0; }
   h1 {
     font-size: 60px; } }
 
@@ -1397,6 +1408,8 @@ footer {
     min-width: auto; }
     header .btn:last-child {
       margin: 0; }
+  .header .btn:last-child {
+    margin: 0; }
   .logo {
     max-width: 250px; }
   .clients-box {
@@ -1492,7 +1505,9 @@ footer {
   .work-instruction {
     padding: 50px 0 30px; }
   .work-instruction__box {
-    max-width: 25%; } }
+    max-width: 25%; }
+  .main-service h1 br {
+    display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 880px) {
