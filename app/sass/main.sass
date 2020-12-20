@@ -1,0 +1,691 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  &:hover, &:focus
+    text-decoration: none
+    
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+
+.btn
+  padding: 0 20px
+  outline: none
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  height: 44px
+  border: none
+    radius: 22px
+  font-size: 12px
+  font-weight: bold
+  font-family: $default-font
+  text-transform: uppercase
+  &:focus, &:hover
+    box-shadow: none
+
+.btn-border
+  border: solid 1px #808080
+    radius: 22px
+  color: #808080
+  &:hover
+    background: $accent
+    color: #fff
+    border-color: transparent
+
+.btn-accent
+  background: $accent
+  color: #ffffff
+  &:hover
+    color: #fff
+    background: #808080
+
+.btn-white
+  font-size: 8.5px
+  font-weight: 500
+  color: #808080
+  border-radius: 12px
+  box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+  background-color: #ffffff
+  text-transform: none
+
+.btn-all
+  height: 30px
+  padding: 0 9px 0 17px
+  font-size: 11px
+  text-transform: none
+  font-weight: 500
+
+.btn-icon
+  margin: 0 0 0 16px
+
+.logo
+  max-width: 322px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+h1
+  text-transform: uppercase
+  font-size: 83.2px
+  font-weight: 800
+  width: 100%
+
+h2
+  width: 100%
+  text-transform: uppercase
+  font-size: 52px
+  font-weight: 800
+  position: relative
+  margin: 0 0 44px
+
+.bg-grey
+  background: #f7f7f7
+
+.bg-black-grey
+  background: #404040
+
+.container
+  max-width: 1200px
+
+.mb-30
+  margin: 0 0 30px
+
+.svg-icon
+  width: 100%
+  height: 100%
+  display: inline-block
+  transition: .3s ease
+  
+.wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  
+
+//header
+header
+  background: #fff
+  padding: 15px 0
+  .logo
+    margin: 0 auto 0 0
+  .btn
+    margin: 0 11px 0 0
+    min-width: 225px
+    &:last-child
+      margin: 0 -225px 0 0
+
+.header-wrapper
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+
+
+//main
+main
+  padding: 81px 0 99px
+  background: url("../img/bg1.jpg") no-repeat center
+    size: cover
+  color: #fff
+
+.title-text
+  max-width: 310px
+  width: 100%
+  margin: 0 0 0 auto
+  font-family: $font
+  font-size: 30.8px
+  height: 100%
+  display: flex
+  align-items: center
+
+.main-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 19.8px
+  font-weight: 500
+  text-transform: uppercase
+  margin: 74px 0 0
+
+.main-box__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100px
+  width: 100%
+  margin: 0 auto 8px
+  img
+    max-height: 100%
+
+.main-box2
+  .main-box__icon
+    max-width: 82px
+
+.main-box3
+  .main-box__icon
+    max-width: 66px
+
+.main-box4
+  .main-box__icon
+    max-width: 89px
+
+.main-box5
+  .main-box__icon
+    max-width: 88px
+
+.main-box6
+  .main-box__icon
+    max-width: 61px
+
+//.services
+.services
+  padding: 78px 0 49px
+  h2
+    max-width: 740px
+    padding: 0 160px 0 0
+    &:after
+      content: ''
+      position: absolute
+      width: 124px
+      height: 62px
+      right: 0
+      bottom: -30px
+      background: url("../img/arrow1.png") no-repeat center
+        size: 100%
+
+
+.services-box
+  height: 100%
+  background: #fff
+  box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+  border-radius: 17px
+  padding: 11px 33px 35px
+  font-size: 12px
+  font-weight: 500
+  transition: .3s ease
+  &:hover
+    a
+      color: $accent
+    .services-box__icon
+      fill: $accent
+
+.services-box__title
+  font-weight: 800
+  font-size: 15px
+  margin: 0 0 10px
+  color: #000000
+
+.services-box__head
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding: 12px 0
+  border-bottom: 1px solid $text
+
+.services-box__body
+  padding: 16px 0 0
+
+.services-box__icon
+  fill: #bfbfbf
+
+.services-box1
+  .services-box__icon
+    width: 50px
+    height: 49px
+
+.services-box2
+  .services-box__icon
+    width: 48px
+    height: 47px
+
+.services-box3
+  .services-box__icon
+    width: 51px
+    height: 47px
+
+.services-box4
+  .services-box__icon
+    width: 51px
+    height: 45px
+
+.services-box5
+  .services-box__icon
+    width: 51px
+    height: 37px
+
+.services-box6
+  .services-box__icon
+    width: 46px
+    height: 49px
+
+.services-box7
+  .services-box__icon
+    width: 53px
+    height: 40px
+
+.services-box8
+  .services-box__icon
+    width: 43px
+    height: 43px
+
+//.blog
+.blog
+  padding: 77px 0
+  .wrapper
+    flex-wrap: nowrap
+  .line-wrapper
+    padding: 0 0 0 70px
+
+.line-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.blog-box
+  width: 401px
+  border-radius: 20px
+  overflow: hidden
+  background: #f7f7f7
+  margin: 0 30px 22px 0
+  font-size: 12px
+  font-weight: 500
+  .btn
+    margin: 25px 0 0 auto
+    max-width: 125px
+    height: 24px
+
+.blog-box__img
+  width: 100%
+  height: 216px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.blog-box__body
+  width: 100%
+  padding: 21px 32px 24px 26px
+
+.date
+  margin: 0 0 9px
+  width: 100%
+  color: #828282
+  font-weight: 800
+  font-size: 12.5px
+
+.blog-slider
+  width: 1270px
+  margin: 0 0 0 51px
+
+.slick-slide
+  outline: none
+
+.line-number-section
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  height: 100%
+  width: 70px
+  position: relative
+  &:after
+    content: ''
+    display: inline-block
+    width: 1px
+    height: 341px
+    background: #b3b3b3
+    margin: 11px 0 0
+
+.line-number-section__num
+  transform: rotate(-90deg)
+  width: 19px
+  color: #b3b3b3
+  font-weight: 500
+
+.slick-arrow
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  border: solid 1px #808080
+    radius: 50%
+  transition: .3s ease
+  z-index: 1
+  opacity: 1
+  padding: 8px
+  position: relative
+  left: 0
+  top: 0
+  right: 0
+  transform: none
+  svg
+    fill: $text
+    transition: .3s ease
+    width: 100%
+    height: 100%
+  &:before
+    display: none
+  &:hover, &:focus
+    background: $accent
+    border-color: $accent
+    svg
+      fill: #fff
+
+.slider-nav
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+
+.slick-prev
+  margin: 0 27px 0 0
+
+//clients
+.clients
+  padding: 77px 0 47px
+  h2
+    position: relative
+    max-width: 910px
+    padding: 0 160px 0 0
+    &:after
+      content: ''
+      position: absolute
+      width: 124px
+      height: 62px
+      right: 0
+      bottom: -30px
+      background: url("../img/arrow1.png") no-repeat center
+        size: 100%
+  h3
+    margin: 0 0 11px
+
+.text-border
+  text-transform: uppercase
+  font-size: 40.6px
+  font-weight: 800
+  color: $text2
+  -webkit-text-fill-color: #f7f7f7
+  -webkit-text-stroke-width: 1px
+  -webkit-text-stroke-color: $text2
+
+.clients-col
+  width: 20%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+
+.clients-box
+  width: 202px
+  height: 202px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fff
+  box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+
+.clients-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-wrap: wrap
+
+//order-services
+.order-services
+  color: #fff
+  padding: 69px 0 78px
+  h2
+    position: relative
+    margin: 0 0 40px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: calc(100% + 30px)
+      width: 441px
+      height: 254px
+      background: url("../img/arrow2.png") no-repeat center
+        size: 100%
+  .box-text
+    padding: 0 20px 0 35px
+    font-size: 28.3px
+    font-weight: 500
+    p
+      margin: 0 0 25px
+      &:last-child
+        margin: 0
+  .btn
+    margin: 111px 20px 0 auto
+    max-width: 225px
+    height: 42px
+    width: 100%
+
+.box-scroll
+  position: relative
+  //padding: 0 33px 0 0
+  height: 380px
+
+
+.order-services-content
+  font-size: 12px
+  padding: 0 0 30px 70px
+  h3
+    font-weight: 800
+    margin: 0 0 20px
+  p
+    margin: 0 0 20px
+
+.mCSB_inside>.mCSB_container
+  margin-right: 33px
+
+.mCSB_scrollTools .mCSB_draggerRail
+  width: 1px
+  background: #fff
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  border-radius: 4.5px
+  background-color: #ffffff
+  width: 9px
+  height: 57px
+
+#mCSB_1_scrollbar_vertical .mCSB_dragger
+  height: 57px
+
+//contacts
+.contacts
+  padding: 78px 0 75px
+  position: relative
+  .container
+    position: relative
+    z-index: 1
+  h2
+    margin: 0 auto 258px
+    max-width: 770px
+    width: 100%
+    border-radius: 33px
+    box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+    background: #fff
+    font-size: 38.6px
+    font-weight: 800
+    text-align: center
+    text-transform: none
+    padding: 21px 30px
+    color: #404040
+    line-height: 1
+
+.map
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+
+.address
+  width: 100%
+  text-align: center
+  margin: 27px auto 0
+  color: #404040
+  font-size: 28.5px
+  font-weight: 800
+
+.phone-box
+  margin: 0 auto
+  border-radius: 37px
+  max-width: 370px
+  width: 100%
+  background: $accent
+  padding: 18px 30px
+
+.phone
+  color: #fff
+  text-align: center
+  font-size: 31px
+  font-weight: bold
+  &:hover
+    color: #fff
+
+.ymaps-layers-pane
+  filter: grayscale(100%)
+
+//footer
+footer
+  background: #fff
+  padding: 87px 0 78px
+  .btn
+    margin: 0 12px 0 0
+    width: 225px
+    &:last-child
+      margin: 0
+
+
+.footer-box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  max-width: 180px
+  width: 100%
+
+.copyright
+  margin: 19px 0 0
+  font-size: 26.1px
+  font-weight: 500
+  color: #404040
+
+.footer-menu
+  margin: 0 auto
+  column-count: 2
+  li
+    a
+      font-size: 13px
+      font-weight: 500
+      color: #000
+      line-height: 1.69
+
+
+@import "media"
+// Всегда в конце
+
