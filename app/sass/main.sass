@@ -71,6 +71,7 @@ body
   font-family: $default-font
   font-weight: normal
   background: #fff
+  color: #000
 
 html, body
   overflow-x: hidden
@@ -88,9 +89,10 @@ a
   text-decoration: none
   transition: .3s ease
   outline: none
+
   &:hover, &:focus
     text-decoration: none
-    
+
 input, textarea, select
   outline: none
   box-shadow: none
@@ -100,6 +102,7 @@ input, textarea, select
   font-family: $default-font
   color: #7e7e7e
   font-size: 13.5px
+
   &::placeholder
     color: #7e7e7e
 
@@ -109,6 +112,13 @@ input
   width: 100%
   height: 72px
   padding: 20px 17px 0
+
+textarea
+  width: 100%
+  border: solid 1px #7e7e7e
+    radius: 14.5px
+  padding: 32px 26px
+  height: 350px
 
 label
   display: inline-block
@@ -130,6 +140,7 @@ label
   font-weight: bold
   font-family: $default-font
   text-transform: uppercase
+
   &:focus, &:hover
     box-shadow: none
 
@@ -137,6 +148,7 @@ label
   border: solid 1px #808080
     radius: 22px
   color: #808080
+
   &:hover
     background: $accent
     color: #fff
@@ -145,6 +157,7 @@ label
 .btn-accent
   background: $accent
   color: #ffffff
+
   &:hover
     color: #fff
     background: #808080
@@ -201,27 +214,33 @@ h2
 .mb-30
   margin: 0 0 30px
 
+.mb-20
+  margin: 0 0 20px
+
 .svg-icon
   width: 100%
   height: 100%
   display: inline-block
   transition: .3s ease
-  
+
 .wrapper
   display: flex
   align-items: flex-start
   flex-wrap: wrap
-  
+
 
 //header
 header
   background: #fff
   padding: 15px 0
+
   .logo
     margin: 0 auto 0 0
+
   .btn
     margin: 0 11px 0 0
     min-width: 225px
+
     &:last-child
       margin: 0 -225px 0 0
 
@@ -266,6 +285,7 @@ main
   height: 100px
   width: 100%
   margin: 0 auto 8px
+
   img
     max-height: 100%
 
@@ -292,9 +312,11 @@ main
 //.services
 .services
   padding: 78px 0 49px
+
   h2
     max-width: 740px
     padding: 0 160px 0 0
+
     &:after
       content: ''
       position: absolute
@@ -315,9 +337,11 @@ main
   font-size: 12px
   font-weight: 500
   transition: .3s ease
+
   &:hover
     a
       color: $accent
+
     .services-box__icon
       fill: $accent
 
@@ -384,8 +408,10 @@ main
 //.blog
 .blog
   padding: 77px 0
+
   .wrapper
     flex-wrap: nowrap
+
   .line-wrapper
     padding: 0 0 0 70px
 
@@ -404,6 +430,7 @@ main
   margin: 0 30px 22px 0
   font-size: 12px
   font-weight: 500
+
   .btn
     margin: 25px 0 0 auto
     max-width: 125px
@@ -416,6 +443,7 @@ main
   align-items: center
   justify-content: center
   overflow: hidden
+
   img
     width: 100%
     height: 100%
@@ -447,6 +475,7 @@ main
   height: 100%
   width: 70px
   position: relative
+
   &:after
     content: ''
     display: inline-block
@@ -478,16 +507,20 @@ main
   top: 0
   right: 0
   transform: none
+
   svg
     fill: $text
     transition: .3s ease
     width: 100%
     height: 100%
+
   &:before
     display: none
+
   &:hover, &:focus
     background: $accent
     border-color: $accent
+
     svg
       fill: #fff
 
@@ -503,10 +536,12 @@ main
 //clients
 .clients
   padding: 77px 0 47px
+
   h2
     position: relative
     max-width: 910px
     padding: 0 160px 0 0
+
     &:after
       content: ''
       position: absolute
@@ -516,6 +551,7 @@ main
       bottom: -30px
       background: url("../img/arrow1.png") no-repeat center
         size: 100%
+
   h3
     margin: 0 0 11px
 
@@ -557,9 +593,11 @@ main
 .order-services
   color: #fff
   padding: 69px 0 78px
+
   h2
     position: relative
     margin: 0 0 40px
+
     &:before
       content: ''
       position: absolute
@@ -569,14 +607,18 @@ main
       height: 254px
       background: url("../img/arrow2.png") no-repeat center
         size: 100%
+
   .box-text
     padding: 0 20px 0 35px
     font-size: 28.3px
     font-weight: 500
+
     p
       margin: 0 0 25px
+
       &:last-child
         margin: 0
+
   .btn
     margin: 111px 20px 0 auto
     max-width: 225px
@@ -592,13 +634,15 @@ main
 .order-services-content
   font-size: 12px
   padding: 0 0 30px 70px
+
   h3
     font-weight: 800
     margin: 0 0 20px
+
   p
     margin: 0 0 20px
 
-.mCSB_inside>.mCSB_container
+.mCSB_inside > .mCSB_container
   margin-right: 33px
 
 .mCSB_scrollTools .mCSB_draggerRail
@@ -618,9 +662,11 @@ main
 .contacts
   padding: 78px 0 75px
   position: relative
+
   .container
     position: relative
     z-index: 1
+
   h2
     margin: 0 auto 258px
     max-width: 770px
@@ -664,6 +710,7 @@ main
   text-align: center
   font-size: 31px
   font-weight: bold
+
   &:hover
     color: #fff
 
@@ -674,9 +721,11 @@ main
 footer
   background: #fff
   padding: 87px 0 78px
+
   .btn
     margin: 0 12px 0 0
     width: 225px
+
     &:last-child
       margin: 0
 
@@ -697,6 +746,7 @@ footer
 .footer-menu
   margin: 0 auto
   column-count: 2
+
   li
     a
       font-size: 13px
@@ -717,6 +767,7 @@ footer
   justify-content: flex-start
   color: #7e7e7e
   font-size: 13.5px
+
   a
     display: block
 
@@ -747,7 +798,7 @@ footer
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 14px
     height: 14px
     border-radius: 8px
@@ -757,6 +808,8 @@ footer
   text-decoration: underline
   display: inline-block
   color: #7e7e7e
+  &:hover
+    color: $accent
 
 .modal-title
   text-align: center
@@ -766,6 +819,7 @@ footer
 
 .modal-header
   border: none
+
   .close
     padding: 0
     margin: 0
@@ -781,6 +835,7 @@ footer
   z-index: 1
   display: flex
   position: absolute
+
   &:before, &:after
     content: ''
     position: absolute
@@ -789,8 +844,10 @@ footer
     width: 1px
     height: 100%
     background: $accent
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -802,6 +859,391 @@ footer
   .blog-slider
     width: 100%
 
+//page service
+.main-service
+  padding: 34px 0 117px
+  .box-text
+    line-height: 1.11
+    font-size: 18px
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+  h1
+    margin: 0 0 26px
+
+.breadcrumb
+  background: transparent
+  padding: 0
+  border-radius: 0
+  margin: 0
+  font-size: 14px
+  font-weight: 500
+  a
+    color: #fff
+
+.breadcrumb-item.active
+  color: #ffffff
+
+.breadcrumb-item+.breadcrumb-item::before
+  color: #fff
+
+.main-service__icon
+  fill: #fff
+  margin: 43px 0 26px
+  width: 117px
+  height: 115px
+
+.price-service
+  font-size: 41px
+  font-weight: 500
+  margin: 51px 0 0
+
+//.stages-work
+.stages-work
+  padding: 88px 0 87px
+  .text-border
+    margin: 0
+    max-width: 540px
+    width: 100%
+    font-size: 35.5px
+    line-height: 1
+  h2
+    margin: 0 0 13px
+
+.stages-work-wrapper
+  width: 100%
+  position: relative
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 125px
+  &:before, &:after
+    content: ''
+    position: absolute
+    height: 2px
+    background: $accent
+  &:before
+    width: 479px
+    left: -380px
+    top: 93px
+  &:after
+    top: 176px
+    width: 520px
+    right: -375px
+
+
+.stages-work__box
+  margin: 39px 0 0
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  font-size: 18px
+  font-weight: 500
+  max-width: 174px
+  width: 100%
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 50px
+    right: -56px
+    background: url("../img/stage-arrow1.png") no-repeat center
+      size: 100%
+    width: 140px
+    height: 93px
+  &:nth-child(even)
+    margin: 66px 0 0
+  &:last-child
+    &:after
+      display: none
+  &:nth-child(2)
+    &:after
+      width: 124px
+      height: 94px
+      right: -64px
+      top: 14px
+      background: url("../img/stage-arrow2.png") no-repeat center
+        size: 100%
+  &:nth-child(3)
+    &:after
+      background: url("../img/stage-arrow3.png") no-repeat center
+        size: 100%
+      width: 140px
+      height: 93px
+
+.stages-work__box-num
+  font-size: 184px
+  font-weight: 800
+  -webkit-text-stroke: 3px #d90219
+  color: #f7f7f7
+  line-height: .75
+  margin: 0 0 10px
+
+//.principles
+.principles
+  padding: 89px 0 67px
+
+.principles-box__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.principles-box__content
+  font-size: 18px
+  font-weight: 500
+  padding: 0 27px
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  .box-text
+    max-width: 320px
+    width: 100%
+  h3
+    margin: 0 0 13px
+    font-size: 26px
+    font-weight: 800
+
+//work-instruction
+.work-instruction
+  padding: 85px 0 56px
+
+.work-instruction-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+  &:after
+    content: ''
+    position: absolute
+    border: 1px dashed $accent
+    width: calc(100% - 220px)
+    height: 1px
+    top: 100px
+    left: 50%
+    transform: translate(-50%,0)
+
+.work-instruction__box
+  margin: 0 0 32px
+  max-width: 20%
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 22px
+  position: relative
+  z-index: 1
+
+
+
+.work-instruction__box-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background: #f7f7f7
+  width: 202px
+  height: 202px
+  position: relative
+  margin: 0 auto 11px
+  &:after, &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+  &:after
+    border: solid 2px #d90219
+    width: 132px
+    height: 132px
+  &:before
+    width: 152px
+    height: 152px
+    border: solid 2px #d90219
+
+
+.work-instruction__box1
+  .work-instruction__box-icon
+    &:before
+      display: none
+
+.border-circle
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  border-radius: 50%
+  border: solid 2px #d90219
+  display: inline-block
+
+.work-instruction__box3, .work-instruction__box4, .work-instruction__box5
+  .border-circle
+    width: 168px
+    height: 168px
+
+.work-instruction__box4, .work-instruction__box5
+  .border-circle:nth-child(2)
+    width: 185px
+    height: 185px
+
+.work-instruction__box5
+  .work-instruction__box-icon
+    border: solid 2px #d90219
+
+.work-instruction-stages
+  h4
+    margin: 0 0 36px
+    font-size: 26px
+    font-weight: 800
+
+.list-number
+  padding: 0 0 0 30px
+  font-size: 18px
+  counter-reset: item
+  li
+    margin: 0 0 20px
+    &:before
+      content: counters(item, ".") ". "
+      counter-increment: item
+      color: $accent
+      font-weight: 800
+      display: inline-block
+      margin: 0 5px 0 0
+    &:last-child
+      margin: 0
+
+.work-instruction-img
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    background: #fff
+    border-radius: 50%
+    width: 355px
+    height: 355px
+  img
+    position: relative
+    z-index: 1
+
+//.callback
+.callback
+  padding: 86px 0 0
+  h2
+    margin: 0 0 14px
+  .text-border
+    font-size: 35.5px
+    color: #fff
+    -webkit-text-fill-color: #fff
+    margin: 0 0 40px
+
+.callback-form
+  width: 100%
+  background: #fff
+  border-radius: 23.5px
+  box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+  padding: 52px 30px 60px 32px
+  button[type="submit"]
+    max-width: 308px
+    width: 100%
+
+.line-wrapper
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  margin: 16px 0 0
+  .checkbox
+    width: auto
+    margin: 0
+
+.form-group
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  margin: 0
+  label
+    width: 49%
+  .label-message
+    width: 100%
+
+
+.dropdown
+  width: 100%
+  margin: 0 0 30px
+
+.dropdown-toggle
+  border-radius: 14.5px
+  max-width: none
+  width: 100%
+  background: #fff
+  border: solid 2px #d70219
+  box-shadow: none
+  text-align: left
+  color: #d70219
+  font-size: 26px
+  font-weight: 800
+  height: 84px
+  justify-content: space-between
+  padding: 0 37px 0 24px
+  text-transform: none
+  &:after
+    width: 45px
+    height: 45px
+    background: #f7f7f7 url("../img/down-arrow.svg") no-repeat center
+      size: 27px
+    border-radius: 50%
+    border: none
+  &:focus, &:hover
+    box-shadow: none
+    background: #fff
+    color: $accent
+    border-color: $accent
+
+.dropdown-menu
+  width: 100%
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus
+  box-shadow: none
+  background: #ffffff
+  border-color: $accent
+  color: $accent
+
+.label-file
+  position: relative
+  cursor: pointer
+  border-radius: 14.5px
+  background-color: #f7f7f7
+  height: 72px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  color: #7e7e7e
+  font-size: 13.5px
+  padding: 0 19px
+  input
+    display: none
+
+.input-file-icon
+  margin: 0 11px 0 0
 
 @import "media"
 // Всегда в конце

@@ -42,6 +42,25 @@
   footer .btn
     width: auto
 
+  .stages-work__box:after
+    right: -20px
+    width: 100px
+    top: 40px
+
+  .stages-work__box:nth-child(2):after
+    width: 90px
+    right: -30px
+    top: 8px
+
+  .stages-work__box:nth-child(3):after
+    width: 100px
+
+  .stages-work__box
+    font-size: 16px
+
+  .work-instruction__box
+    font-size: 16px
+
 @media only screen and (max-width : 992px)
   h1
     font-size: 40px
@@ -94,6 +113,46 @@
   footer
     padding: 50px 0
 
+  .stages-work__box-num
+    font-size: 120px
+
+  .stages-work__box
+    margin: 30px 0 0
+    max-width: 24%
+    &:nth-child(even)
+      margin: 30px 0 0
+    &:after
+      display: none
+
+  .stages-work-wrapper
+    padding: 0
+    &:after, &:before
+      display: none
+
+  .stages-work
+    padding: 40px 0
+
+  .principles-box__content
+    padding: 0
+    font-size: 16px
+    .box-text
+      max-width: none
+    h3
+      font-size: 18px
+
+  .principles
+    padding: 40px 0 30px
+    
+  .work-instruction-wrapper
+    &:after
+      display: none
+
+  .work-instruction
+    padding: 50px 0 30px
+
+  .work-instruction__box
+    max-width: 25%
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)
   header
@@ -122,6 +181,10 @@
 
   .copyright
     font-size: 22px
+
+  textarea
+    height: 150px
+    padding: 20px
 
 @media only screen and (max-width : 768px)
   .btn
@@ -183,7 +246,64 @@
   .contacts
     padding: 50px 0
 
+  .main-service .box-text
+    font-size: 16px
+
+  .price-service
+    font-size: 30px
+    margin: 30px 0 0
+
+  .main-service
+    padding: 30px 0 50px
+
+  .stages-work__box
+    font-size: 14px
+
+  .stages-work__box-num
+    font-size: 90px
+
+  .work-instruction__box
+    max-width: 33.3%
+
+  .list-number
+    font-size: 16px
+    padding: 0
+
+  .work-instruction-stages h4
+    font-size: 20px
+    margin: 0 0 20px
+
+  .work-instruction-img
+    margin: 30px auto 0
+    &:before
+      width: 280px
+      height: 280px
+
+  .dropdown-toggle
+    height: 60px
+    font-size: 18px
+    &:after
+      width: 30px
+      height: 30px
+      background-size: 20px
+
+  .callback
+    padding: 40px 0 0
+    .text-border
+      font-size: 24px
+      margin: 0 0 30px
+
+  .callback-form button[type="submit"]
+    max-width: 200px
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 640px)
+  .stages-work__box
+    max-width: 49%
+
+  .work-instruction__box
+    max-width: 50%
+
 @media only screen and (max-width : 575px)
   header
     .logo
@@ -239,7 +359,21 @@
     li
       width: 50%
 
+  .stages-work .text-border
+    font-size: 24px
 
+  .callback-form
+    padding: 30px 20px
+
+  .form-group label
+    width: 100%
+
+  .callback-form button[type="submit"]
+    max-width: none
+    margin: 20px auto 0
+
+  .dropdown-toggle
+    font-size: 16px
 
 @media only screen and (max-width : 480px)
   .clients-col
@@ -272,6 +406,9 @@
       &:last-child
         margin: 0 auto
 
+  .price-service
+    font-size: 24px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
   header
@@ -293,3 +430,12 @@
   .text-border
     font-size: 22px
 
+  .stages-work__box
+    font-size: 12px
+
+  .stages-work .text-border
+    font-size: 20px
+
+  .work-instruction__box
+    max-width: none
+    margin: 0 0 20px
