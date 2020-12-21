@@ -581,7 +581,6 @@ main
   justify-content: center
 
 .clients-box
-  padding: 10px
   width: 202px
   height: 202px
   border-radius: 50%
@@ -590,7 +589,42 @@ main
   justify-content: center
   background: #fff
   box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+  position: relative
+  cursor: pointer
+  &:hover
+    .clients-box__hover
+      opacity: 1
+
+.clients-box__img
+  display: flex
+  align-items: center
+  justify-content: center
   overflow: hidden
+  width: 202px
+  height: 202px
+  border-radius: 50%
+  padding: 10px
+
+.clients-box__hover
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  position: absolute
+  background: #808080
+  color: #fff
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 2.7px 3px 16.9px 1.1px rgba(0, 0, 0, 0.13)
+  padding: 30px
+  font-size: 12px
+  font-weight: 500
+  transition: .3s ease
+  opacity: 0
+  left: 50%
+  top: 57px
+  transform: translate(-50%,0)
 
 .clients-wrapper
   width: 100%
