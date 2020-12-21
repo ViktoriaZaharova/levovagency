@@ -775,11 +775,7 @@ main {
   height: 57px; }
 
 .contacts {
-  padding: 78px 0 75px;
   position: relative; }
-  .contacts .container {
-    position: relative;
-    z-index: 1; }
   .contacts h2 {
     margin: 0 auto 258px;
     max-width: 770px;
@@ -794,14 +790,17 @@ main {
     text-transform: none;
     padding: 21px 30px;
     color: #404040;
-    line-height: 1; }
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    top: 78px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    z-index: 1; }
 
 .map {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0; }
+  height: 657px; }
 
 .address {
   width: 100%;
@@ -809,7 +808,13 @@ main {
   margin: 27px auto 0;
   color: #404040;
   font-size: 28.5px;
-  font-weight: 800; }
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1; }
 
 .phone-box {
   margin: 0 auto;
@@ -817,7 +822,13 @@ main {
   max-width: 370px;
   width: 100%;
   background: #d90219;
-  padding: 18px 30px; }
+  padding: 18px 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 129px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1; }
 
 .phone {
   color: #fff;
@@ -1845,13 +1856,14 @@ footer {
     padding: 20px; }
   .contacts h2 {
     font-size: 24px;
-    padding: 15px; }
+    padding: 15px;
+    width: calc(100% - 30px); }
   .phone {
     font-size: 24px; }
   .address {
     font-size: 22px; }
-  .contacts {
-    padding: 50px 0; }
+  .map {
+    height: 550px; }
   .main-service .box-text {
     font-size: 16px; }
   .price-service {

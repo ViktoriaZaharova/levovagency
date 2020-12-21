@@ -703,12 +703,12 @@ main
 
 //contacts
 .contacts
-  padding: 78px 0 75px
+
   position: relative
 
   .container
-    position: relative
-    z-index: 1
+    //position: relative
+    //z-index: 1
 
   h2
     margin: 0 auto 258px
@@ -724,13 +724,16 @@ main
     padding: 21px 30px
     color: #404040
     line-height: 1
+    position: absolute
+    left: 50%
+    top: 78px
+    transform: translate(-50%,0)
+    //padding: 78px 15px 75px
+    z-index: 1
 
 .map
   width: 100%
-  height: 100%
-  position: absolute
-  left: 0
-  top: 0
+  height: 657px
 
 .address
   width: 100%
@@ -739,6 +742,12 @@ main
   color: #404040
   font-size: 28.5px
   font-weight: 800
+  position: absolute
+  left: 50%
+  bottom: 75px
+  transform: translate(-50%,0)
+  //padding: 78px 15px 75px
+  z-index: 1
 
 .phone-box
   margin: 0 auto
@@ -747,6 +756,12 @@ main
   width: 100%
   background: $accent
   padding: 18px 30px
+  position: absolute
+  left: 50%
+  bottom: 129px
+  transform: translate(-50%,0)
+  //padding: 78px 15px 75px
+  z-index: 1
 
 .phone
   color: #fff
