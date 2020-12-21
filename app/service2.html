@@ -496,19 +496,55 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post" class="form">
-                    <label><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
-                    <label><input type="text" name="phone" placeholder="Номер телефона*" required></label>
-                    <label><input type="text" name="mail" placeholder="Email или skype" required></label>
+                <div class="container">
+                    <form method="post" class="callback-form form">
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="form-group">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Разработка сайта
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <a class="dropdown-item" href="#">Производство контента</a>
+                                            <a class="dropdown-item" href="#">Реклама в соцсетях</a>
+                                            <a class="dropdown-item" href="#">Реклама в СМИ</a>
+                                        </div>
+                                    </div>
 
-                    <label class="checkbox">
-                        <input class="checkbox-inp" type="checkbox" name="checkbox">
-                        <span class="checkbox-custom"></span>
-                        <span class="label">Я согласен на обработку данных.
+                                    <label><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+                                    <label><input type="text" name="phone" placeholder="Номер телефона*" required></label>
+                                    <label><input type="text" name="mail" placeholder="Email или skype" required></label>
+                                    <label class="label-file">
+                                        <input type="file" name="file">
+                                        <span class="input-file-icon"><img src="img/paperclip.png" alt=""></span>
+                                        <span class="input-file">Прикрепить файл (doc, pdf, jpg)</span>
+                                    </label>
+
+                                    <label class="d-flex d-lg-none label-message"><textarea name="message"
+                                                                                            placeholder="Напишите все, что считаете нужным"></textarea></label>
+
+                                    <div class="line-wrapper">
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Я согласен на обработку данных.
                         <a href="#" class="links">Подробнее</a></span>
-                    </label>
-                    <button type="submit" class="btn btn-accent">Заказать услуги</button>
-                </form>
+                                        </label>
+                                        <button type="submit" class="btn btn-accent">Заказать услуги</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-5 d-lg-flex d-none">
+                                <label class="label-message"><textarea name="message"
+                                                                       placeholder="Напишите все, что считаете нужным"></textarea></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
