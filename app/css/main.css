@@ -1381,6 +1381,33 @@ footer {
     width: 49%; }
   .form-group .label-message {
     width: 100%; }
+  .form-group .label-select {
+    width: 100%;
+    position: relative; }
+    .form-group .label-select:after {
+      content: '';
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      background: #f7f7f7 url("../img/down-arrow.svg") no-repeat center;
+        background-size: 27px;
+      border-radius: 50%;
+      border: none;
+      right: 37px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+
+.select {
+  width: 100%;
+  border: solid 2px #d70219;
+    border-radius: 14.5px;
+  height: 84px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #d70219;
+  padding: 0 37px 0 24px;
+  cursor: pointer; }
 
 .dropdown {
   width: 100%;
@@ -1902,6 +1929,13 @@ footer {
       width: 30px;
       height: 30px;
       background-size: 20px; }
+  .select {
+    height: 60px;
+    font-size: 18px; }
+  .form-group .label-select:after {
+    width: 30px;
+    height: 30px;
+    background-size: 20px; }
   .callback {
     padding: 40px 0 0; }
     .callback .text-border {
@@ -1990,7 +2024,7 @@ footer {
   .callback-form button[type="submit"] {
     max-width: none;
     margin: 20px auto 0; }
-  .dropdown-toggle {
+  .dropdown-toggle, .select {
     font-size: 16px; }
   .seo-section {
     padding: 40px 0 0; }
@@ -2060,4 +2094,8 @@ footer {
     font-size: 20px; }
   .work-instruction__box {
     max-width: none;
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+  .select {
+    padding: 0 10px; }
+  .form-group .label-select:after {
+    right: 10px; } }

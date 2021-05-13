@@ -1280,6 +1280,33 @@ footer
 
   .label-message
     width: 100%
+  .label-select
+    width: 100%
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 45px
+      height: 45px
+      background: #f7f7f7 url("../img/down-arrow.svg") no-repeat center
+        size: 27px
+      border-radius: 50%
+      border: none
+      right: 37px
+      top: 50%
+      transform: translate(0,-50%)
+
+
+.select
+  width: 100%
+  border: solid 2px #d70219
+    radius: 14.5px
+  height: 84px
+  font-size: 26px
+  font-weight: 800
+  color: #d70219
+  padding: 0 37px 0 24px
+  cursor: pointer
 
 
 .dropdown
